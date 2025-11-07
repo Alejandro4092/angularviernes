@@ -1,1 +1,12 @@
-<p>personascomponent works!</p>
+<div>
+    <h1>Api  Personas StandAlone</h1>
+    @if(personas){
+        <ul>
+            @for(person of personas;track person){
+                <li>
+                    {{person.Nombre}}, {{person.Email}}
+                </li>
+            }
+        </ul>
+    }
+</div>
